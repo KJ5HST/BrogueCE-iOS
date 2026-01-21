@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		/* Platform source files */
+		A1000001001 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000001001; };
+		A1000001002 /* display.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000001002; };
+		A1000001003 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000001003; };
+		A1000001004 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000001004; };
+
+		/* Brogue source files */
+		A1000002001 /* Architect.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002001; };
+		A1000002002 /* Buttons.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002002; };
+		A1000002003 /* Combat.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002003; };
+		A1000002004 /* Dijkstra.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002004; };
+		A1000002005 /* Globals.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002005; };
+		A1000002006 /* GlobalsBase.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002006; };
+		A1000002007 /* Grid.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002007; };
+		A1000002008 /* IO.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002008; };
+		A1000002009 /* Items.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002009; };
+		A1000002010 /* Light.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002010; };
+		A1000002011 /* MainMenu.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002011; };
+		A1000002012 /* Math.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002012; };
+		A1000002013 /* Monsters.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002013; };
+		A1000002014 /* Movement.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002014; };
+		A1000002015 /* PowerTables.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002015; };
+		A1000002016 /* Recordings.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002016; };
+		A1000002017 /* RogueMain.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002017; };
+		A1000002018 /* SeedCatalog.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002018; };
+		A1000002019 /* Time.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002019; };
+		A1000002020 /* Utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002020; };
+		A1000002021 /* Wizard.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000002021; };
+
+		/* Variants */
+		A1000003001 /* GlobalsRapidBrogue.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000003001; };
+		A1000003002 /* GlobalsBrogue.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000003002; };
+		A1000003003 /* GlobalsBulletBrogue.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000003003; };
+
+		/* Additional platform files */
+		A1000001005 /* platformdependent.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000001008; };
+		/* tiles.c and term.c removed - require SDL_image and ncurses which aren't used on iOS */
+
+		/* SDL UIKit main */
+		A1000004001 /* SDL_uikit_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A2000004001; };
+
+		/* Assets */
+		A1000005001 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = A2000005001; };
+		A1000005002 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2000005002; };
+
+		/* Frameworks */
+		A1000006001 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006001; };
+		A1000006002 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006001; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1000006003 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006003; };
+		A1000006004 /* SDL2_ttf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006003; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1000006010 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006010; };
+		A1000006011 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006011; };
+		A1000006012 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006012; };
+		A1000006013 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006013; };
+		A1000006014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006014; };
+		A1000006015 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006015; };
+		A1000006016 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006016; };
+		A1000006017 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006017; };
+		A1000006018 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006018; };
+		A1000006019 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006019; };
+		A1000006020 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006020; };
+		A1000006021 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000006021; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5000001001 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1000006002 /* SDL2.framework in Embed Frameworks */,
+				A1000006004 /* SDL2_ttf.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		/* Product */
+		A6000001001 /* BrogueCE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrogueCE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		/* Platform source files */
+		A2000001001 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A2000001002 /* display.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = display.c; sourceTree = "<group>"; };
+		A2000001003 /* input.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		A2000001004 /* config.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = config.c; sourceTree = "<group>"; };
+		A2000001005 /* display.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
+		A2000001006 /* input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		A2000001007 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+
+		/* Brogue source files */
+		A2000002001 /* Architect.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Architect.c; sourceTree = "<group>"; };
+		A2000002002 /* Buttons.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Buttons.c; sourceTree = "<group>"; };
+		A2000002003 /* Combat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Combat.c; sourceTree = "<group>"; };
+		A2000002004 /* Dijkstra.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Dijkstra.c; sourceTree = "<group>"; };
+		A2000002005 /* Globals.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Globals.c; sourceTree = "<group>"; };
+		A2000002006 /* GlobalsBase.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GlobalsBase.c; sourceTree = "<group>"; };
+		A2000002007 /* Grid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Grid.c; sourceTree = "<group>"; };
+		A2000002008 /* IO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IO.c; sourceTree = "<group>"; };
+		A2000002009 /* Items.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Items.c; sourceTree = "<group>"; };
+		A2000002010 /* Light.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Light.c; sourceTree = "<group>"; };
+		A2000002011 /* MainMenu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MainMenu.c; sourceTree = "<group>"; };
+		A2000002012 /* Math.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Math.c; sourceTree = "<group>"; };
+		A2000002013 /* Monsters.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Monsters.c; sourceTree = "<group>"; };
+		A2000002014 /* Movement.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Movement.c; sourceTree = "<group>"; };
+		A2000002015 /* PowerTables.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PowerTables.c; sourceTree = "<group>"; };
+		A2000002016 /* Recordings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Recordings.c; sourceTree = "<group>"; };
+		A2000002017 /* RogueMain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RogueMain.c; sourceTree = "<group>"; };
+		A2000002018 /* SeedCatalog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SeedCatalog.c; sourceTree = "<group>"; };
+		A2000002019 /* Time.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Time.c; sourceTree = "<group>"; };
+		A2000002020 /* Utilities.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Utilities.c; sourceTree = "<group>"; };
+		A2000002021 /* Wizard.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Wizard.c; sourceTree = "<group>"; };
+		A2000002100 /* Rogue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rogue.h; sourceTree = "<group>"; };
+		A2000002101 /* IncludeGlobals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncludeGlobals.h; sourceTree = "<group>"; };
+		A2000002102 /* platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+
+		/* Variants */
+		A2000003001 /* GlobalsRapidBrogue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GlobalsRapidBrogue.c; sourceTree = "<group>"; };
+		A2000003002 /* GlobalsBrogue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GlobalsBrogue.c; sourceTree = "<group>"; };
+		A2000003003 /* GlobalsBulletBrogue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GlobalsBulletBrogue.c; sourceTree = "<group>"; };
+
+		/* Additional platform files */
+		A2000001008 /* platformdependent.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = platformdependent.c; sourceTree = "<group>"; };
+		A2000001009 /* tiles.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tiles.c; sourceTree = "<group>"; };
+		A2000001010 /* term.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = term.c; sourceTree = "<group>"; };
+		A2000001011 /* tiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tiles.h; sourceTree = "<group>"; };
+		A2000001012 /* term.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = term.h; sourceTree = "<group>"; };
+
+		/* SDL UIKit main */
+		A2000004001 /* SDL_uikit_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SDL_uikit_main.c; path = libs/SDL2/src/main/uikit/SDL_uikit_main.c; sourceTree = "<group>"; };
+
+		/* Assets */
+		A2000005001 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		A2000005002 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+
+		/* Info.plist */
+		A2000005003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		/* Frameworks - now pointing to local pre-built frameworks */
+		A2000006001 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		A2000006003 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		A2000006010 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A2000006011 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A2000006012 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2000006013 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A2000006014 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2000006015 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		A2000006016 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A2000006017 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A2000006018 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A2000006019 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2000006020 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		A2000006021 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7000001001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000006001 /* SDL2.framework in Frameworks */,
+				A1000006003 /* SDL2_ttf.framework in Frameworks */,
+				A1000006010 /* AudioToolbox.framework in Frameworks */,
+				A1000006011 /* AVFoundation.framework in Frameworks */,
+				A1000006012 /* CoreGraphics.framework in Frameworks */,
+				A1000006013 /* CoreMotion.framework in Frameworks */,
+				A1000006014 /* Foundation.framework in Frameworks */,
+				A1000006015 /* GameController.framework in Frameworks */,
+				A1000006016 /* Metal.framework in Frameworks */,
+				A1000006017 /* OpenGLES.framework in Frameworks */,
+				A1000006018 /* QuartzCore.framework in Frameworks */,
+				A1000006019 /* UIKit.framework in Frameworks */,
+				A1000006020 /* CoreHaptics.framework in Frameworks */,
+				A1000006021 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8000001001 = {
+			isa = PBXGroup;
+			children = (
+				A8000002001 /* src */,
+				A2000005001 /* assets */,
+				A2000005002 /* LaunchScreen.storyboard */,
+				A2000005003 /* Info.plist */,
+				A8000003001 /* libs */,
+				A8000004001 /* Frameworks */,
+				A8000005001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8000002001 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A8000002002 /* platform */,
+				A8000002003 /* brogue */,
+				A8000002004 /* variants */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A8000002002 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001001 /* main.c */,
+				A2000001002 /* display.c */,
+				A2000001003 /* input.c */,
+				A2000001004 /* config.c */,
+				A2000001008 /* platformdependent.c */,
+				A8000002005 /* include */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		A8000002005 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001005 /* display.h */,
+				A2000001006 /* input.h */,
+				A2000001007 /* config.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A8000002003 /* brogue */ = {
+			isa = PBXGroup;
+			children = (
+				A2000002001 /* Architect.c */,
+				A2000002002 /* Buttons.c */,
+				A2000002003 /* Combat.c */,
+				A2000002004 /* Dijkstra.c */,
+				A2000002005 /* Globals.c */,
+				A2000002006 /* GlobalsBase.c */,
+				A2000002007 /* Grid.c */,
+				A2000002008 /* IO.c */,
+				A2000002009 /* Items.c */,
+				A2000002010 /* Light.c */,
+				A2000002011 /* MainMenu.c */,
+				A2000002012 /* Math.c */,
+				A2000002013 /* Monsters.c */,
+				A2000002014 /* Movement.c */,
+				A2000002015 /* PowerTables.c */,
+				A2000002016 /* Recordings.c */,
+				A2000002017 /* RogueMain.c */,
+				A2000002018 /* SeedCatalog.c */,
+				A2000002019 /* Time.c */,
+				A2000002020 /* Utilities.c */,
+				A2000002021 /* Wizard.c */,
+				A2000002100 /* Rogue.h */,
+				A2000002101 /* IncludeGlobals.h */,
+				A2000002102 /* platform.h */,
+			);
+			path = brogue;
+			sourceTree = "<group>";
+		};
+		A8000002004 /* variants */ = {
+			isa = PBXGroup;
+			children = (
+				A2000003001 /* GlobalsRapidBrogue.c */,
+				A2000003002 /* GlobalsBrogue.c */,
+				A2000003003 /* GlobalsBulletBrogue.c */,
+			);
+			path = variants;
+			sourceTree = "<group>";
+		};
+		A8000003001 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A2000004001 /* SDL_uikit_main.c */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		A8000004001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2000006001 /* SDL2.framework */,
+				A2000006003 /* SDL2_ttf.framework */,
+				A2000006010 /* AudioToolbox.framework */,
+				A2000006011 /* AVFoundation.framework */,
+				A2000006012 /* CoreGraphics.framework */,
+				A2000006013 /* CoreMotion.framework */,
+				A2000006014 /* Foundation.framework */,
+				A2000006015 /* GameController.framework */,
+				A2000006016 /* Metal.framework */,
+				A2000006017 /* OpenGLES.framework */,
+				A2000006018 /* QuartzCore.framework */,
+				A2000006019 /* UIKit.framework */,
+				A2000006020 /* CoreHaptics.framework */,
+				A2000006021 /* CoreAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8000005001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6000001001 /* BrogueCE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9000001001 /* BrogueCE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000001001 /* Build configuration list for PBXNativeTarget "BrogueCE" */;
+			buildPhases = (
+				AB000001001 /* Sources */,
+				A7000001001 /* Frameworks */,
+				AC000001001 /* Resources */,
+				A5000001001 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrogueCE;
+			productName = BrogueCE;
+			productReference = A6000001001 /* BrogueCE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE000001001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A9000001001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA000002001 /* Build configuration list for PBXProject "BrogueCE" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8000001001;
+			productRefGroup = A8000005001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9000001001 /* BrogueCE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC000001001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000005001 /* assets in Resources */,
+				A1000005002 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB000001001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001001 /* main.c in Sources */,
+				A1000001002 /* display.c in Sources */,
+				A1000001003 /* input.c in Sources */,
+				A1000001004 /* config.c in Sources */,
+				A1000002001 /* Architect.c in Sources */,
+				A1000002002 /* Buttons.c in Sources */,
+				A1000002003 /* Combat.c in Sources */,
+				A1000002004 /* Dijkstra.c in Sources */,
+				A1000002005 /* Globals.c in Sources */,
+				A1000002006 /* GlobalsBase.c in Sources */,
+				A1000002007 /* Grid.c in Sources */,
+				A1000002008 /* IO.c in Sources */,
+				A1000002009 /* Items.c in Sources */,
+				A1000002010 /* Light.c in Sources */,
+				A1000002011 /* MainMenu.c in Sources */,
+				A1000002012 /* Math.c in Sources */,
+				A1000002013 /* Monsters.c in Sources */,
+				A1000002014 /* Movement.c in Sources */,
+				A1000002015 /* PowerTables.c in Sources */,
+				A1000002016 /* Recordings.c in Sources */,
+				A1000002017 /* RogueMain.c in Sources */,
+				A1000002018 /* SeedCatalog.c in Sources */,
+				A1000002019 /* Time.c in Sources */,
+				A1000002020 /* Utilities.c in Sources */,
+				A1000002021 /* Wizard.c in Sources */,
+				A1000003001 /* GlobalsRapidBrogue.c in Sources */,
+				A1000003002 /* GlobalsBrogue.c in Sources */,
+				A1000003003 /* GlobalsBulletBrogue.c in Sources */,
+				A1000001005 /* platformdependent.c in Sources */,
+				A1000004001 /* SDL_uikit_main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AF000001001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF000001002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF000002001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/src/brogue",
+					"$(SRCROOT)/src/platform/include",
+					"$(SRCROOT)/src/variants",
+					"$(SRCROOT)/Frameworks/SDL2.framework/Headers",
+					"$(SRCROOT)/Frameworks/SDL2_ttf.framework/Headers",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brogue.BrogueCE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF000002002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/src/brogue",
+					"$(SRCROOT)/src/platform/include",
+					"$(SRCROOT)/src/variants",
+					"$(SRCROOT)/Frameworks/SDL2.framework/Headers",
+					"$(SRCROOT)/Frameworks/SDL2_ttf.framework/Headers",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brogue.BrogueCE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000001001 /* Build configuration list for PBXNativeTarget "BrogueCE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF000002001 /* Debug */,
+				AF000002002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000002001 /* Build configuration list for PBXProject "BrogueCE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF000001001 /* Debug */,
+				AF000001002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE000001001 /* Project object */;
+}

@@ -1,0 +1,3 @@
+[submodule "BrogueCE"]
+	path = BrogueCE
+	url = https://github.com/tmewett/BrogueCE.git
